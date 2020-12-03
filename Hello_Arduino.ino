@@ -13,10 +13,11 @@ void loop() {
 
  Serial.println("Blink");
 
-  digitalWrite(ledPin1, HIGH);
-  digitalWrite(ledPin2, LOW);
+  digitalWrite(ledPin1, HIGH); //turns led 1 on
+  digitalWrite(ledPin2, LOW); // turns led 2 off
   delay(300);
-  digitalWrite(ledPin1, LOW);
-  digitalWrite(ledPin2, HIGH);
+  digitalWrite(ledPin1, LOW); //turns led 1 off
+  digitalWrite(ledPin2, HIGH); //turns led 2 on
   delay(300);
 }
+//I reused my code from last year, but was mildly unsure as to how to make it fade, so i just used 2 leds instead and made them alternate.
